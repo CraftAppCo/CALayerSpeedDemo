@@ -2,7 +2,7 @@
 
 This is a simple iOS app that demos the effect of adjusting the speed property on a CALayer object, in particularly the CALayer object of a UIWindow. Watch as the app speeds up and slows down! 👀
 
-### Usage
+## Usage
 
 **For double-speed animations**:  
 
@@ -28,7 +28,7 @@ window.layer.speed = 1.2 // Subtle boost 👌
 window.layer.speed = 1.0 // default
 ```  
 
-###To set this up in your own app `AppDelegate`:
+### To set this up in your own app `AppDelegate`:
 ``` swift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

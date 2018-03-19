@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+## CALayer Speed Demo
 
-You can use the [editor on GitHub](https://github.com/CraftAppCo/CALayerSpeedDemo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a simple iOS app that demos the effect of adjusting the speed property on a CALayer object, in particularly the CALayer object of a UIWindow. Watch as the app speeds up and slows down! 👀
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Usage
 
-### Markdown
+**For double-speed animations**:  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+``` swift
+window.layer.speed = 2.0 // Super fast 🏎💨 
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**For half-speed animations**:  
 
-### Jekyll Themes
+``` swift
+window.layer.speed = 0.5 // Super slow 🐢
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CraftAppCo/CALayerSpeedDemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**For a subtle speed boost**:
 
-### Support or Contact
+``` swift
+window.layer.speed = 1.2 // Subtle boost 👌
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**To set back to the default**:  
+
+``` swift
+window.layer.speed = 1.0 // default
+```  
+
+###To set this up in your own app `AppDelegate`:
+``` swift
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+	var window: UIWindow?
+
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		
+		window = UIWindow(frame: UIScreen.main.bounds)
+		window?.layer.speed = 1.2 // Subtle boost
+		
+		return true
+	}	
+}
+```

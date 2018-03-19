@@ -12,6 +12,7 @@
 		103D036A206041F4006CF93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103D0368206041F4006CF93A /* Main.storyboard */; };
 		103D036C206041F4006CF93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 103D036B206041F4006CF93A /* Assets.xcassets */; };
 		103D036F206041F4006CF93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103D036D206041F4006CF93A /* LaunchScreen.storyboard */; };
+		103D0379206042BA006CF93A /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D0378206042BA006CF93A /* CellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		103D036B206041F4006CF93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		103D036E206041F4006CF93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		103D0370206041F4006CF93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		103D0378206042BA006CF93A /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				103D0364206041F4006CF93A /* AppDelegate.swift */,
 				103D0366206041F4006CF93A /* ViewController.swift */,
+				103D0378206042BA006CF93A /* CellViewModel.swift */,
 				103D0368206041F4006CF93A /* Main.storyboard */,
 				103D036B206041F4006CF93A /* Assets.xcassets */,
 				103D036D206041F4006CF93A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103D0367206041F4006CF93A /* ViewController.swift in Sources */,
+				103D0379206042BA006CF93A /* CellViewModel.swift in Sources */,
 				103D0365206041F4006CF93A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXD8E5FVZ4;
 				INFOPLIST_FILE = CALayerSpeedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftappco.CALayerSpeedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXD8E5FVZ4;
 				INFOPLIST_FILE = CALayerSpeedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.craftappco.CALayerSpeedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

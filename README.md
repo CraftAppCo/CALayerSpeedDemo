@@ -2,6 +2,8 @@
 
 This is a simple iOS app that demos the effect of adjusting the speed property on a CALayer object, in particularly the CALayer object of a UIWindow. Watch as the app speeds up and slows down! 👀
 
+You can read the full blog post on this topic [here](https://www.craftappco.com/blog/2018/speed-up-ios-app-one-line-of-code "Craft App Co. Blog").
+
 ## Usage
 
 **For double-speed animations**:  
